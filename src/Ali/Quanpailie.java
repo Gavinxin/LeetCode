@@ -5,6 +5,9 @@ import java.util.Collections;
 import java.util.List;
 
 public class Quanpailie {
+	/*
+	 * È«ÅÅÁĞ
+	 */
 
 	public void quanpailie(int[] nums) {
 		List<Integer> list = new ArrayList<>();
