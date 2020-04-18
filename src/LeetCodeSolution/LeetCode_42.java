@@ -1,6 +1,6 @@
 package LeetCodeSolution;
 
-public class JieYuShui_42 {
+public class LeetCode_42 {
 	 public int trap(int[] height) {
 		 int sum = 0;
 		 int size = height.length;
@@ -23,6 +23,8 @@ public class JieYuShui_42 {
 //		 找到数组中从下标 i 到最右端�?高的条形块高�? \text{right\_max}right_max�?
 //		 扫描数组 \text{height}height 并更新答案：
 //		 累加 \min(\text{max\_left}[i],\text{max\_right}[i]) - \text{height}[i]min(max_left[i],max_right[i])−height[i] �? ansans �?
+		 if(height.length == 0)
+	          return 0;
 		 int sum = 0;
 		 int length = height.length;
 		 int[] max_left = new int[length];
