@@ -11,8 +11,12 @@ public class Offer10II {
 			return 1;
 		if(n == 1)
 			return 1;
-		if(n==2)
-			return 2;
-		return numWays(n-1) + numWays(n-2);
+		int a  =1,b=1;
+		for (int i = 0; i < n; i++) {
+			int sum = (a+b)%1000000007;
+			a = b;
+			b = sum;	
+		}
+		return a;
     }
 }
