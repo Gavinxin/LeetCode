@@ -1,6 +1,6 @@
 package GetOfferSolutions;
 
-public class Offer53 {
+public class Offer53II {
 	/**
 	 * 面试题53 - II. 0～n-1中缺失的数字
 	 * @param nums
