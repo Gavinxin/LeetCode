@@ -3,19 +3,19 @@ package LeetCodeSolution;
 import java.util.Stack;
 
 public class LeetCode155 {
-	 private Stack<Integer> stack;
-	    private Stack<Integer> minStack;
+	private Stack<Integer> stack;
+	private Stack<Integer> minStack;
 
-	    public void MinStack() {
+	public void MinStack() {
 	        stack = new Stack<>();
 	        minStack = new Stack<>();
-	    }
+	}
 
 	
     
     public void push(int x) {
     	stack.push(x);
-    	if(minStack.size()<=0 || x<=minStack.peek())
+    	if(minStack.isEmpty() || x<=minStack.peek())
     		minStack.push(x);
     }
     
