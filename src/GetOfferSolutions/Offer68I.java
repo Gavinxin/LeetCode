@@ -4,7 +4,7 @@ import LeetCodeSolution.TreeNode;
 
 public class Offer68I {
 	/**
-	 * 
+	 * 面试题68 - I. 二叉搜索树的最近公共祖先
 	 * @param root
 	 * @param p
 	 * @param q
