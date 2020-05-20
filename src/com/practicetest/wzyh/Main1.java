@@ -1,4 +1,4 @@
-package WZYH;
+package com.practicetest.wzyh;
 
 import java.util.Scanner;
 

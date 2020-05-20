@@ -1,4 +1,4 @@
-package KuaiShou;
+package com.practicetest.kuaishou;
 
 import java.util.Scanner;
 

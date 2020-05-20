@@ -1,4 +1,4 @@
-package TX20200426;
+package com.practicetest.tx20200426;
 
 import java.util.Scanner;
 
