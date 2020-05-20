@@ -1,4 +1,4 @@
-package QiNiuYunBiShi;
+package com.practicetest.qiniuyun;
 
 import java.util.HashMap;
 import java.util.HashSet;

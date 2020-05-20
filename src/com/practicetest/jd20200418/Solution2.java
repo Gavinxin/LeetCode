@@ -1,4 +1,4 @@
-package JD20200418;
+package com.practicetest.jd20200418;
 
 import java.util.ArrayList;
 import java.util.Arrays;
