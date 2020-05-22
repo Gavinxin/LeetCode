@@ -19,11 +19,7 @@ public class LeetCode1019 {
 			head= head.next;
 		}
 		//Integer[] r = res.stream().toArray(Integer[]::new);
-		int[] res1= new int[res.size()];
-		int j =0;
-		for (int r : res) {
-			res1[j++] =r;
-		}
-		return res1;
+		
+		return res.stream().mapToInt(Integer::valueOf).toArray();
     }
 }

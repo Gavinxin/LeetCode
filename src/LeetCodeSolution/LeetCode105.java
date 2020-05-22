@@ -30,7 +30,8 @@ public class LeetCode105 {
 		 TreeNode root = new TreeNode(preorder[preorder_root]);
 		 //z左子树中节点数目
 		 int size_left_subtree = inorder_root-inorder_left;
-		 root.left = myBuildTree(preorder, inorder, preorder_left+1, preorder_left+size_left_subtree, preorder_left, inorder_root-1);
+		 
+		 root.left = myBuildTree(preorder, inorder, preorder_left+1, preorder_left+size_left_subtree, inorder_left, inorder_root-1);
 		 root.right = myBuildTree(preorder, inorder, preorder_left+1+size_left_subtree, preorder_right, inorder_root+1, inorder_right);
 		 return root;
 	}
