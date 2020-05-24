@@ -1,16 +1,15 @@
-package GetOfferSolutions;
+package LeetCodeSolutions;
 
-import LeetCodeSolutions.ListNode;
-
-public class Offer25 {
+public class LeetCode21 {
 	/**
-	 * 面试题25. 合并两个排序的链表
+	 * 合并两个有序链表
+	 * 将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
 	 * @param l1
 	 * @param l2
 	 * @return
 	 */
-	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {   
-        if(l1==null)
+	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+		if(l1==null)
 			return l2;
 		if(l2 == null)
 			return l1;

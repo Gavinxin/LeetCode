@@ -1,6 +1,6 @@
 package GetOfferSolutions;
 
-import LeetCodeSolution.TreeNode;
+import LeetCodeSolutions.TreeNode;
 
 public class Offer55II {
 	/**

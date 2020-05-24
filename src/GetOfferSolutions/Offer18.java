@@ -1,6 +1,6 @@
 package GetOfferSolutions;
 
-import LeetCodeSolution.ListNode;
+import LeetCodeSolutions.ListNode;
 
 public class Offer18 {
 	/**
