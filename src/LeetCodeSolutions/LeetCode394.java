@@ -1,7 +1,6 @@
 package LeetCodeSolutions;
 
 import java.util.Stack;
-import java.util.function.BinaryOperator;
 
 public class LeetCode394 {
 	/**
@@ -21,9 +20,8 @@ public class LeetCode394 {
 			}else {
 				StringBuilder stemp= new StringBuilder();
 				while(!stack.peek().equals("[")) {
-					stemp.append(stack.pop());
+					stemp.insert(0,stack.pop());
 				}
-				stemp = stemp.reverse();
 				stack.pop();
 				// consider mul number
 				StringBuilder num= new StringBuilder();
@@ -37,14 +35,7 @@ public class LeetCode394 {
 				}
 				stack.add(t.toString());
 				i++;
-				stack.stream().reduce("", new BinaryOperator<String>() {
-					
-					@Override
-					public String apply(String arg0, String arg1) {
-						// TODO Auto-generated method stub
-						return arg0+arg1;
-					}
-				}).toString();
+				System.out.println(stack.size());
 			}
 			
 		}
@@ -55,6 +46,6 @@ public class LeetCode394 {
     }
 	public static void main(String[] args) {
 		LeetCode394 l = new LeetCode394();
-		System.out.println(l.decodeString("3[z]2[2[y]pq4[2[jk]e1[f]]]ef"));
+		System.out.println(l.decodeString("3[a2[c]]"));
 	}
 }
