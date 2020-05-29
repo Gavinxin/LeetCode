@@ -1,12 +1,18 @@
 package LeetCodeSolutions;
 
-public class DEDistance_72 {
+public class LeetCode72 {
+	/**
+	 * Edit distance
+	 * @param word1
+	 * @param word2
+	 * @return
+	 */
 	public int minDistance(String word1, String word2) {
 		if(word1.length()==0)
 	        return word2.length();
 		else if(word2.length() == 0)
 			return word1.length();
-		else if(word1==word2)
+		else if(word1.equals(word2))
 			return 0;
 		int length1= word1.length();
 		int length2= word2.length();
@@ -26,6 +32,6 @@ public class DEDistance_72 {
 				dp[i][j] =Math.min(min_temp+1, last);
 			}
 		}
-		return dp[length1-1][length2-1];
+		return dp[length1][length2];
     }
 }
