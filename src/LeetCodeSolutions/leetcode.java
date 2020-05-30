@@ -46,31 +46,9 @@ public class leetcode {
 		return sum_count;
 	}
 
-	// leetcode 836
-	public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
-		if (rec1[0] >= rec2[2] || rec1[2] <= rec2[1] || rec1[1] >= rec2[3] || rec1[3] <= rec2[1])
-			return false;
-		return true;
-	}
+	
 
-	// leetcode 836
-	public int[] nextGreaterElements(int[] nums) {
-		int[] results = new int[10000];
-		for (int i = 0; i < nums.length; i++) {
 
-		}
-		return results;
-	}
-
-	// leecode 179
-	public static String largestNumber(int[] nums) {
-		Arrays.sort(nums);
-		StringBuilder str = new StringBuilder();
-		for (int i = nums.length - 1; i > 0; i--) {
-			str.append(nums[i]);
-		}
-		return str.toString();
-	}
 
 	private static int[] findminK(int[] nums, int k) {
 		PriorityQueue<Integer> pq = new PriorityQueue<>(new Comparator<Integer>() {
