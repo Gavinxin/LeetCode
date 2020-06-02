@@ -1,6 +1,11 @@
 package LeetCodeSolutions;
 
 public class LeetCode206 {
+	/**
+	 * ·´×ªÁ´±í
+	 * @param head
+	 * @return
+	 */
 	 public ListNode reverseList(ListNode head) {
 		 ListNode dummy= new ListNode(0);
 		 dummy.next = head;
