@@ -14,6 +14,7 @@ public class LeetCode322 {
 	 * @return
 	 */
 	public int coinChange(int[] coins, int amount) {
+		//dp数组表示i钱得最少硬币
 		int[] dp = new int[amount+1];
 		if(coins.length<0)
 			return -1;
@@ -23,7 +24,7 @@ public class LeetCode322 {
 		for (int i = 1; i < dp.length; i++) {
 			for (int j = 0; j < coins.length; j++) {
 				if(coins[j]<=i)
-					dp[i] = Math.min(dp[i-coins[j]]+1, dp[i]);
+					dp[i] = Math.min(dp[i], dp[i-coins[j]]+1);
 			}
 		}
 		return dp[amount]>amount?-1:dp[amount];
