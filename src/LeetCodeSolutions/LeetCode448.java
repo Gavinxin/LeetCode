@@ -11,7 +11,8 @@ public class LeetCode448 {
 	 */
 	public List<Integer> findDisappearedNumbers(int[] nums) {
 		for (int i = 0; i < nums.length; i++) {
-			nums[nums[i]-1] = Math.abs(nums[nums[i]-1])*-1;
+            int index = Math.abs(nums[i])-1;
+            nums[index] = -Math.abs(nums[index]);
 			
 		}
 		List<Integer> res = new ArrayList<Integer>();
