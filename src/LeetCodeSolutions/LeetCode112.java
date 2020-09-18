@@ -1,5 +1,8 @@
 package LeetCodeSolutions;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class LeetCode112 {
 	/**
 	 * 112. Â·¾¶×ÜºÍ
@@ -8,6 +11,7 @@ public class LeetCode112 {
 	 * @return
 	 */
 	public boolean hasPathSum(TreeNode root, int sum) {
+		Map<Integer,Integer> map =new HashMap<>();
         if (root == null) {
             return false;
         }
